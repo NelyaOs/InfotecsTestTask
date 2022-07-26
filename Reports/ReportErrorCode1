@@ -1,0 +1,25 @@
+AnswerToTheTaskCode1.py::test_div_by_zero_value FAILED                   [100%]
+AnswerToTheTaskCode1.py:3 (test_div_by_zero_value)
+{'statusCode': 8, 'statusMessage': 'Ошибка вычисления'} != {'statusCode': 1, 'statusMessage': 'Ошибка вычисления'}
+
+Expected :{'statusCode': 1, 'statusMessage': 'Ошибка вычисления'}
+Actual   :{'statusCode': 8, 'statusMessage': 'Ошибка вычисления'}
+<Click to see difference>
+
+def test_div_by_zero_value():
+>       assert request_json(ResponseEndpoints.division, 3467, 0) == {"statusCode": ResponseStatusCode.calculate_error.value, "statusMessage": ResponseTextError.calculate_error.value}
+E       AssertionError: assert {'statusCode': 8, 'statusMessage': 'Ошибка вычисления'} == {'statusCode': 1, 'statusMessage': 'Ошибка вычисления'}
+E         Common items:
+E         {'statusMessage': 'Ошибка вычисления'}
+E         Differing items:
+E         {'statusCode': 8} != {'statusCode': 1}
+E         Full diff:
+E         - {'statusCode': 1, 'statusMessage': 'Ошибка вычисления'}
+E         ?                ^
+E         + {'statusCode': 8, 'statusMessage': 'Ошибка вычисления'}
+E         ?                ^
+
+AnswerToTheTaskCode1.py:5: AssertionError
+
+
+============================== 1 failed in 2.77s ==============================

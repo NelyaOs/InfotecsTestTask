@@ -1,0 +1,31 @@
+Addition.py::test_sum_valid_values PASSED                                [  8%]
+Addition.py::test_sum_max_and_min_values PASSED                          [ 16%]
+Addition.py::test_sum_max_values PASSED                                  [ 25%]
+Addition.py::test_sum_min_values PASSED                                  [ 33%]
+Addition.py::test_sum_min_plus_1 PASSED                                  [ 41%]
+Addition.py::test_sum_min_minus_1 PASSED                                 [ 50%]
+Addition.py::test_sum_max_minus_1 PASSED                                 [ 58%]
+Addition.py::test_sum_max_plus_1 FAILED                                  [ 66%]
+Addition.py:25 (test_sum_max_plus_1)
+0 != 4
+
+Expected :4
+Actual   :0
+<Click to see difference>
+
+def test_sum_max_plus_1():
+>       assert request_status_code(ResponseEndpoints.addition, 2147483648, -10) == ResponseStatusCode.large_value_error.value
+E       AssertionError: assert 0 == 4
+E        +  where 0 = request_status_code(<ResponseEndpoints.addition: 'addition'>, 2147483648, -10)
+E        +    where <ResponseEndpoints.addition: 'addition'> = ResponseEndpoints.addition
+E        +  and   4 = <ResponseStatusCode.large_value_error: 4>.value
+E        +    where <ResponseStatusCode.large_value_error: 4> = ResponseStatusCode.large_value_error
+
+Addition.py:27: AssertionError
+
+Addition.py::test_sum_zero_value PASSED                                  [ 75%]
+Addition.py::test_sum_fractional_number PASSED                           [ 83%]
+Addition.py::test_sum_empty_value PASSED                                 [ 91%]
+Addition.py::test_sum_str PASSED                                         [100%]
+
+======================== 1 failed, 11 passed in 25.06s ========================

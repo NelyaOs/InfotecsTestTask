@@ -1,0 +1,33 @@
+Multiplication.py::test_mult_valid_values PASSED                         [  7%]
+Multiplication.py::test_mult_zero_values PASSED                          [ 14%]
+Multiplication.py::test_mult_negative_and_positive_values PASSED         [ 21%]
+Multiplication.py::test_mult_negative_values PASSED                      [ 28%]
+Multiplication.py::test_mult_fractional_number PASSED                    [ 35%]
+Multiplication.py::test_mult_min_value PASSED                            [ 42%]
+Multiplication.py::test_mult_min_minus_1 PASSED                          [ 50%]
+Multiplication.py::test_mult_min_plus_1 PASSED                           [ 57%]
+Multiplication.py::test_mult_max_and_min_values PASSED                   [ 64%]
+Multiplication.py::test_mult_max_value PASSED                            [ 71%]
+Multiplication.py::test_mult_max_plus_1 FAILED                           [ 78%]
+Multiplication.py:34 (test_mult_max_plus_1)
+0 != 4
+
+Expected :4
+Actual   :0
+<Click to see difference>
+
+def test_mult_max_plus_1():
+>       assert request_status_code(ResponseEndpoints.multiplication, 2147483648, 2) == ResponseStatusCode.large_value_error.value
+E       AssertionError: assert 0 == 4
+E        +  where 0 = request_status_code(<ResponseEndpoints.multiplication: 'multiplication'>, 2147483648, 2)
+E        +    where <ResponseEndpoints.multiplication: 'multiplication'> = ResponseEndpoints.multiplication
+E        +  and   4 = <ResponseStatusCode.large_value_error: 4>.value
+E        +    where <ResponseStatusCode.large_value_error: 4> = ResponseStatusCode.large_value_error
+
+Multiplication.py:36: AssertionError
+
+Multiplication.py::test_mult_max_minus_1 PASSED                          [ 85%]
+Multiplication.py::test_mult_str PASSED                                  [ 92%]
+Multiplication.py::test_mult_empty_value PASSED                          [100%]
+
+======================== 1 failed, 13 passed in 28.93s ========================

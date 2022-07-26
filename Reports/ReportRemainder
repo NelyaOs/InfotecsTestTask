@@ -1,0 +1,50 @@
+Remainder.py::test_rem_valid_values PASSED                               [  7%]
+Remainder.py::test_rem_max_and_min_values PASSED                         [ 14%]
+Remainder.py::test_rem_max_values PASSED                                 [ 21%]
+Remainder.py::test_rem_max_minus_1 PASSED                                [ 28%]
+Remainder.py::test_rem_max_plus_1 FAILED                                 [ 35%]
+Remainder.py:16 (test_rem_max_plus_1)
+0 != 4
+
+Expected :4
+Actual   :0
+<Click to see difference>
+
+def test_rem_max_plus_1():
+>       assert request_status_code(ResponseEndpoints.remainder, 2147483648, 10) == ResponseStatusCode.large_value_error.value
+E       AssertionError: assert 0 == 4
+E        +  where 0 = request_status_code(<ResponseEndpoints.remainder: 'remainder'>, 2147483648, 10)
+E        +    where <ResponseEndpoints.remainder: 'remainder'> = ResponseEndpoints.remainder
+E        +  and   4 = <ResponseStatusCode.large_value_error: 4>.value
+E        +    where <ResponseStatusCode.large_value_error: 4> = ResponseStatusCode.large_value_error
+
+Remainder.py:18: AssertionError
+
+Remainder.py::test_rem_min_values PASSED                                 [ 42%]
+Remainder.py::test_rem_min_plus_1 PASSED                                 [ 50%]
+Remainder.py::test_rem_min_minus_1 PASSED                                [ 57%]
+Remainder.py::test_rem_by_zero_value FAILED                              [ 64%]
+Remainder.py:28 (test_rem_by_zero_value)
+8 != 1
+
+Expected :1
+Actual   :8
+<Click to see difference>
+
+def test_rem_by_zero_value():
+>       assert request_status_code(ResponseEndpoints.remainder, 15, 0) == ResponseStatusCode.calculate_error.value
+E       AssertionError: assert 8 == 1
+E        +  where 8 = request_status_code(<ResponseEndpoints.remainder: 'remainder'>, 15, 0)
+E        +    where <ResponseEndpoints.remainder: 'remainder'> = ResponseEndpoints.remainder
+E        +  and   1 = <ResponseStatusCode.calculate_error: 1>.value
+E        +    where <ResponseStatusCode.calculate_error: 1> = ResponseStatusCode.calculate_error
+
+Remainder.py:30: AssertionError
+
+Remainder.py::test_rem_zero_value PASSED                                 [ 71%]
+Remainder.py::test_rem_smaller_by_the_larger PASSED                      [ 78%]
+Remainder.py::test_rem_fractional_number PASSED                          [ 85%]
+Remainder.py::test_rem_empty_value PASSED                                [ 92%]
+Remainder.py::test_rem_str PASSED                                        [100%]
+
+======================== 2 failed, 12 passed in 28.89s ========================
