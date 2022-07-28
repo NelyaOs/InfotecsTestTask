@@ -1,9 +1,9 @@
-Remainder.py::test_rem_valid_values PASSED                               [  7%]
-Remainder.py::test_rem_max_and_min_values PASSED                         [ 14%]
-Remainder.py::test_rem_max_values PASSED                                 [ 21%]
-Remainder.py::test_rem_max_minus_1 PASSED                                [ 28%]
-Remainder.py::test_rem_max_plus_1 FAILED                                 [ 35%]
-Remainder.py:16 (test_rem_max_plus_1)
+remainder.py::test_rem_valid_values PASSED                               [  7%]
+remainder.py::test_rem_max_and_min_values PASSED                         [ 14%]
+remainder.py::test_rem_max_values PASSED                                 [ 21%]
+remainder.py::test_rem_max_minus_1 PASSED                                [ 28%]
+remainder.py::test_rem_max_plus_1 FAILED                                 [ 35%]
+remainder.py:16 (test_rem_max_plus_1)
 0 != 4
 
 Expected :4
@@ -18,13 +18,13 @@ E        +    where <ResponseEndpoints.remainder: 'remainder'> = ResponseEndpoin
 E        +  and   4 = <ResponseStatusCode.large_value_error: 4>.value
 E        +    where <ResponseStatusCode.large_value_error: 4> = ResponseStatusCode.large_value_error
 
-Remainder.py:18: AssertionError
+remainder.py:18: AssertionError
 
-Remainder.py::test_rem_min_values PASSED                                 [ 42%]
-Remainder.py::test_rem_min_plus_1 PASSED                                 [ 50%]
-Remainder.py::test_rem_min_minus_1 PASSED                                [ 57%]
-Remainder.py::test_rem_by_zero_value FAILED                              [ 64%]
-Remainder.py:28 (test_rem_by_zero_value)
+remainder.py::test_rem_min_values PASSED                                 [ 42%]
+remainder.py::test_rem_min_plus_1 PASSED                                 [ 50%]
+remainder.py::test_rem_min_minus_1 PASSED                                [ 57%]
+remainder.py::test_rem_by_zero_value FAILED                              [ 64%]
+remainder.py:28 (test_rem_by_zero_value)
 8 != 1
 
 Expected :1
@@ -39,12 +39,12 @@ E        +    where <ResponseEndpoints.remainder: 'remainder'> = ResponseEndpoin
 E        +  and   1 = <ResponseStatusCode.calculate_error: 1>.value
 E        +    where <ResponseStatusCode.calculate_error: 1> = ResponseStatusCode.calculate_error
 
-Remainder.py:30: AssertionError
+remainder.py:30: AssertionError
 
-Remainder.py::test_rem_zero_value PASSED                                 [ 71%]
-Remainder.py::test_rem_smaller_by_the_larger PASSED                      [ 78%]
-Remainder.py::test_rem_fractional_number PASSED                          [ 85%]
-Remainder.py::test_rem_empty_value PASSED                                [ 92%]
-Remainder.py::test_rem_str PASSED                                        [100%]
+remainder.py::test_rem_zero_value PASSED                                 [ 71%]
+remainder.py::test_rem_smaller_by_the_larger PASSED                      [ 78%]
+remainder.py::test_rem_fractional_number PASSED                          [ 85%]
+remainder.py::test_rem_empty_value PASSED                                [ 92%]
+remainder.py::test_rem_str PASSED                                        [100%]
 
 ======================== 2 failed, 12 passed in 28.89s ========================

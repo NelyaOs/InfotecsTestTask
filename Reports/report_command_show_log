@@ -1,0 +1,10 @@
+show_log.py::test_show_log PASSED                                   [100%]
+
+# displays information about executed commands for the entire period
+# example:
+2022-07-20 20:23:22,581|webcalculator.exe|INFO: ���-����������� ������� �� localhost:5413
+# ...
+
+
+
+============================== 1 passed in 0.73s ==============================

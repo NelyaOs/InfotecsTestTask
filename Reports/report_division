@@ -1,12 +1,12 @@
-Division.py::test_div_valid_values PASSED                                [  7%]
-Division.py::test_div_min_value PASSED                                   [ 15%]
-Division.py::test_div_max_values PASSED                                  [ 23%]
-Division.py::test_div_min_values PASSED                                  [ 30%]
-Division.py::test_div_min_plus_1 PASSED                                  [ 38%]
-Division.py::test_div_min_minus_1 PASSED                                 [ 46%]
-Division.py::test_div_max_minus_1 PASSED                                 [ 53%]
-Division.py::test_div_max_plus_1 FAILED                                  [ 61%]
-Division.py:24 (test_div_max_plus_1)
+division.py::test_div_valid_values PASSED                                [  7%]
+division.py::test_div_min_value PASSED                                   [ 15%]
+division.py::test_div_max_values PASSED                                  [ 23%]
+division.py::test_div_min_values PASSED                                  [ 30%]
+division.py::test_div_min_plus_1 PASSED                                  [ 38%]
+division.py::test_div_min_minus_1 PASSED                                 [ 46%]
+division.py::test_div_max_minus_1 PASSED                                 [ 53%]
+division.py::test_div_max_plus_1 FAILED                                  [ 61%]
+division.py:24 (test_div_max_plus_1)
 0 != 4
 
 Expected :4
@@ -21,11 +21,11 @@ E        +    where <ResponseEndpoints.division: 'division'> = ResponseEndpoints
 E        +  and   4 = <ResponseStatusCode.large_value_error: 4>.value
 E        +    where <ResponseStatusCode.large_value_error: 4> = ResponseStatusCode.large_value_error
 
-Division.py:26: AssertionError
+division.py:26: AssertionError
 
-Division.py::test_div_zero_value PASSED                                  [ 69%]
-Division.py::test_div_by_zero_value FAILED                               [ 76%]
-Division.py:30 (test_div_by_zero_value)
+division.py::test_div_zero_value PASSED                                  [ 69%]
+division.py::test_div_by_zero_value FAILED                               [ 76%]
+division.py:30 (test_div_by_zero_value)
 8 != 1
 
 Expected :1
@@ -40,10 +40,10 @@ E        +    where <ResponseEndpoints.division: 'division'> = ResponseEndpoints
 E        +  and   1 = <ResponseStatusCode.calculate_error: 1>.value
 E        +    where <ResponseStatusCode.calculate_error: 1> = ResponseStatusCode.calculate_error
 
-Division.py:32: AssertionError
+division.py:32: AssertionError
 
-Division.py::test_div_fractional_number PASSED                           [ 84%]
-Division.py::test_div_empty_value PASSED                                 [ 92%]
-Division.py::test_div_str PASSED                                         [100%]
+division.py::test_div_fractional_number PASSED                           [ 84%]
+division.py::test_div_empty_value PASSED                                 [ 92%]
+division.py::test_div_str PASSED                                         [100%]
 
 ======================== 2 failed, 11 passed in 26.86s ========================

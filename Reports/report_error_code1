@@ -1,5 +1,5 @@
-AnswerToTheTaskCode1.py::test_div_by_zero_value FAILED                   [100%]
-AnswerToTheTaskCode1.py:3 (test_div_by_zero_value)
+answer_error_cod1.py::test_div_by_zero_value FAILED                   [100%]
+answer_error_cod1.py:3 (test_div_by_zero_value)
 {'statusCode': 8, 'statusMessage': 'Ошибка вычисления'} != {'statusCode': 1, 'statusMessage': 'Ошибка вычисления'}
 
 Expected :{'statusCode': 1, 'statusMessage': 'Ошибка вычисления'}
@@ -19,7 +19,7 @@ E         ?                ^
 E         + {'statusCode': 8, 'statusMessage': 'Ошибка вычисления'}
 E         ?                ^
 
-AnswerToTheTaskCode1.py:5: AssertionError
+answer_error_cod1.py:5: AssertionError
 
 
 ============================== 1 failed in 2.77s ==============================

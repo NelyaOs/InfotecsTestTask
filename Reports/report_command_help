@@ -1,0 +1,15 @@
+help.py::test_help PASSED                                                [100%]usage: webcalculator.exe [-h] {start,stop,restart,show_log} ...
+
+positional arguments:
+  {start,stop,restart,show_log}
+                        ������� �������
+    start               ������ �������. ��������� ���������: "start -h"
+    stop                ��������� ����������� �������
+    restart             ���������� �������
+    show_log            ���������� ���� �������
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+
+============================== 1 passed in 0.44s ==============================

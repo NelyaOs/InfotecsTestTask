@@ -1,6 +1,0 @@
-AnswerToTheTaskCod0.py::test_sum_valid_values PASSED                     [ 25%]
-AnswerToTheTaskCod0.py::test_div_valid_values PASSED                     [ 50%]
-AnswerToTheTaskCod0.py::test_mult_valid_values PASSED                    [ 75%]
-AnswerToTheTaskCod0.py::test_rem_valid_values PASSED                     [100%]
-
-============================== 4 passed in 8.38s ==============================
